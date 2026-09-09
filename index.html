@@ -6,39 +6,38 @@
 <title>Global FX Trading 72</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
-body{margin:0;background:#000;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;min-height:100vh;text-align:center}
-.box{width:92%;max-width:400px;background:#151515;border:1px solid #333;border-radius:20px;padding:28px}
-h1{color:gold}
-.btn{display:block;padding:18px;margin:12px 0;border-radius:14px;text-decoration:none;font-weight:bold;font-size:18px}
-.vip{background:gold;color:#000}
-.learn{background:#222;color:#fff;border:1px solid #444}
+body{margin:0;background:#000;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.card{width:92%;max-width:410px;background:#141414;border:1px solid #2a2a2a;border-radius:24px;padding:30px;text-align:center}
+.logo{width:120px;height:120px;border-radius:50%;border:3px solid gold;box-shadow:0 0 20px gold}
+h1{color:gold;margin:15px 0 5px}
+p{color:#888;font-size:13px}
+.btn{display:block;padding:16px;margin:12px 0;border-radius:12px;text-decoration:none;font-weight:bold}
+.gold{background:gold;color:#000}
+.white{background:#fff;color:#000}
+.dark{background:#222;color:#fff;border:1px solid #333}
 </style>
 </head>
 <body>
-<div class="box">
+<div class="card">
+<img src="https://i.ibb.co/Y7x2r8yQ/gfx-gold-logo.jpg" class="logo" alt="GFX Logo">
 <h1>Global FX Trading 72</h1>
-<p style="color:#888">JOIN OFFICIAL VIP CHANNEL</p>
+<p>OFFICIAL CHANNEL & BOT</p>
 
-<a class="btn vip" onclick="go()">💎 VIP SIGNALS</a>
-<a class="btn learn" onclick="go()">📖 Learn More</a>
-
-<p style="margin-top:15px;font-size:12px;color:#666">
-Bot: @RajeshFx_33bot | Channel: @GlobalFXTrading_72
-</p>
+<a class="btn gold" onclick="openLink()">🚀 Launch App</a>
+<a class="btn white" onclick="openLink()">📖 Learn More - VIP SIGNALS</a>
+<a class="btn dark" href="https://t.me/GlobalFXTrading_72">📈 Channel: @GlobalFXTrading_72</a>
+<a class="btn dark" href="https://t.me/RajeshFx_33bot">🤖 Bot: @RajeshFx_33bot</a>
 </div>
 
 <script>
-function go(){
-  var channel="https://t.me/GlobalFXTrading_72";
-  // Bot through Channel Join + Learn More both go to channel
+function openLink(){
+  var url="https://t.me/GlobalFXTrading_72";
   if(window.Telegram && window.Telegram.WebApp){
-    Telegram.WebApp.openTelegramLink(channel);
+    Telegram.WebApp.openTelegramLink(url);
   }else{
-    window.location.href=channel;
+    window.location.href=url;
   }
 }
-// Auto Join - Bot khule to seedha channel me
-setTimeout(go, 600);
 Telegram.WebApp.ready();
 Telegram.WebApp.expand();
 </script>
