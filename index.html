@@ -3,33 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>XAUUSD MARKET ANALYSIS - VIP SIGNALS</title>
+<title>Global FX Trading 72 - Official</title>
+<!-- Telegram Mini App System -->
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<!-- Auto Redirect to Channel -->
+<meta http-equiv="refresh" content="0; url=https://t.me/GlobalFXTrading_72">
 <style>
-body{background:#000;color:#FFD700;font-family:Arial;text-align:center;padding:30px 20px;margin:0}
-.box{background:#111;border:2px solid #FFD700;border-radius:16px;padding:25px;margin:0 auto 30px;max-width:400px}
-h1{font-size:24px;margin-bottom:10px}
-.badge{background:#FFD700;color:#000;padding:8px 20px;border-radius:20px;font-weight:bold;display:inline-block;margin-bottom:15px}
-p{color:#FFF;font-size:15px;line-height:1.7;margin:8px 0}
-.gold{color:#FFD700;font-weight:bold;font-size:17px}
-.btn{display:block;width:90%;max-width:350px;margin:15px auto;padding:18px;background:#FFD700;color:#000;text-decoration:none;font-weight:bold;border-radius:12px;font-size:18px}
-.btn:hover{background:#FFFFFF}
+body{margin:0;background:#0a0a0a;color:#fff;font-family:Arial,sans-serif;text-align:center;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.card{max-width:420px;width:90%;background:#151515;border:1px solid #222;border-radius:20px;padding:25px;box-shadow:0 0 30px rgba(0,0,0,0.5)}
+.logo{width:120px;height:120px;border-radius:50%;border:3px solid #FFD700;object-fit:cover}
+h1{color:#FFD700;font-size:24px;margin:15px 0 5px}
+p{color:#888;font-size:14px}
+.btn{display:block;width:100%;padding:16px;margin:12px 0;border-radius:12px;text-decoration:none;font-weight:bold;font-size:17px;box-sizing:border-box}
+.btn-gold{background:linear-gradient(90deg,#D4AF37,#FFD700);color:#000}
+.btn-blue{background:#0088cc;color:#fff}
 </style>
 </head>
 <body>
+<div class="card">
+<img src="logo.jpg" class="logo" alt="Logo">
+<h1>Global FX Trading 72</h1>
+<p>Tap below to continue to Telegram</p>
 
-<div class="box">
-<h1>XAUUSD MARKET ANALYSIS ¥</h1>
-<div class="badge">VERIFIED PROVIDER</div>
-<p>Premium Forex & Gold Trading Signals</p>
-<p class="gold">We Provide 5-7 Daily Gold Signals On Our Channel</p>
-<p>Professional Analysis & Education</p>
+<a class="btn btn-gold" href="https://t.me/GlobalFXTrading_72">🚀 LAUNCH APP - JOIN CHANNEL</a>
+<a class="btn btn-blue" href="https://t.me/RajeshFx_33bot">🤖 OPEN BOT @RajeshFx_33bot</a>
+
+<p style="font-size:11px;color:#444;margin-top:15px">You will be redirected automatically...</p>
 </div>
 
-<!-- BUTTON 1: GOES TO BOT -->
-<a href="https://t.me/RajeshFx_33bot" class="btn">LAUNCH APP</a>
-
-<!-- BUTTON 2: GOES TO CHANNEL -->
-<a href="https://t.me/GlobalFXTrading_72" class="btn">LEARN MORE</a>
-
+<script>
+// === MAIN SYSTEM - BOT THROUGH CHANNEL ===
+function redirectToChannel(){
+  const channel = "https://t.me/GlobalFXTrading_72";
+  // If opened inside Telegram Mini App
+  if(window.Telegram && window.Telegram.WebApp){
+    Telegram.WebApp.ready();
+    Telegram.WebApp.expand();
+    Telegram.WebApp.openTelegramLink(channel);
+  } else {
+    window.location.href = channel;
+  }
+}
+// Auto redirect in 0.6 seconds - For Launch App & Learn More
+setTimeout(redirectToChannel, 600);
+</script>
 </body>
 </html>
