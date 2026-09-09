@@ -7,16 +7,14 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
 body{margin:0;background:#000;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:15px}
-.card{width:100%;max-width:400px;background:#111;border:2px solid #FFD700;border-radius:26px;padding:30px;text-align:center;box-shadow:0 0 30px rgba(255,215,0,0.5)}
-.logo{width:120px;height:120px;border-radius:50%;border:3px solid #FFD700;object-fit:cover;background:#000}
-h2{color:#FFD700;margin:14px 0 3px}
+.card{width:100%;max-width:400px;background:#111;border:2px solid #FFD700;border-radius:26px;padding:30px;text-align:center}
+.logo{width:120px;height:120px;border-radius:50%;border:3px solid #FFD700}
+h2{color:#FFD700;margin:12px 0 3px}
 .user{color:#888;font-size:12px;margin-bottom:14px}
-.box{background:#0a2614;border:1.5px solid #00FF88;color:#00FF88;padding:12px;border-radius:12px;font-weight:bold;font-size:14px;margin:18px 0}
-.btn{display:block;padding:16px;border-radius:13px;font-weight:bold;text-decoration:none;margin:11px 0;cursor:pointer;font-size:16px}
-.gold{background:linear-gradient(90deg,#FFD700,#FFA500);color:#000;box-shadow:0 4px 15px rgba(255,215,0,0.4)}
-.dark{background:#1e1e1e;color:#FFD700;border:1.5px solid #FFD700}
-.stats{display:flex;justify-content:space-around;border-top:1px solid #222;margin-top:16px;padding-top:14px}
-.stats span{color:#FFD700;font-weight:bold} .stats label{color:#666;font-size:10px;display:block}
+.box{background:#0a2614;border:1.5px solid #00FF88;color:#00FF88;padding:12px;border-radius:12px;font-weight:bold;margin:18px 0}
+.btn{display:block;padding:16px;border-radius:13px;font-weight:bold;text-decoration:none;margin:11px 0;cursor:pointer;border:none;width:100%;font-size:16px}
+.gold{background:gold;color:#000}
+.dark{background:#222;color:gold;border:1.5px solid gold}
 </style>
 </head>
 <body>
@@ -24,24 +22,31 @@ h2{color:#FFD700;margin:14px 0 3px}
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" class="logo">
 <h2>Global FX Trade 2027 🔥</h2>
 <div class="user">@RajeshFx_33bot • @GlobalFXTrade_2027</div>
-<div class="box">✅ Daily 5 to 7 Premium Signals 📈<br>💰 Join VIP @GlobalFXTrade_2027</div>
+<div class="box">✅ Daily 5 to 7 Premium Signals</div>
 
-<a class="btn gold" onclick="launch()">🚀 Launch App - @RajeshFx_33bot</a>
-<a class="btn dark" onclick="more()">📊 Learn More - Channel</a>
+<button class="btn gold" onclick="launchApp()">🚀 Launch App - @RajeshFx_33bot</button>
+<button class="btn dark" onclick="learnMore()">📊 Learn More - VIP Channel</button>
+</div>
 
-<div class="stats">
-<div><span>15K+</span><label>Members</label></div>
-<div><span>5-7</span><label>Signals</label></div>
-<div><span>99%</span><label>Win</label></div>
-</div>
-</div>
 <script>
-Telegram.WebApp.ready(); Telegram.WebApp.expand();
-function launch(){
-  Telegram.WebApp.openTelegramLink('https://t.me/RajeshFx_33bot?startapp');
+Telegram.WebApp.ready();
+Telegram.WebApp.expand();
+
+function launchApp(){
+  // FIXED - 2 طریقے سے کھلے گا
+  try{
+    Telegram.WebApp.openTelegramLink('https://t.me/RajeshFx_33bot?startapp');
+  } catch(e){
+    window.open('https://t.me/RajeshFx_33bot?startapp','_blank');
+  }
 }
-function more(){
-  Telegram.WebApp.openTelegramLink('https://t.me/GlobalFXTrade_2027');
+
+function learnMore(){
+  try{
+    Telegram.WebApp.openTelegramLink('https://t.me/GlobalFXTrade_2027');
+  } catch(e){
+    window.open('https://t.me/GlobalFXTrade_2027','_blank');
+  }
 }
 </script>
 </body>
