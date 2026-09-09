@@ -1,64 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rajesh FX - Global FX Trading</title>
+<title>Global FX Trade 2027</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#050505;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:15px}
-.card{width:100%;max-width:400px;background:linear-gradient(145deg,#121212,#1a1a1a);border:2px solid #FFD700;border-radius:28px;padding:28px;text-align:center;box-shadow:0 0 35px rgba(255,215,0,0.4)}
-.profile-wrap{position:relative;display:inline-block}
-.logo{width:125px;height:125px;border-radius:50%;border:3px solid #FFD700;box-shadow:0 0 20px gold;object-fit:cover;background:#000}
-.online{position:absolute;bottom:8px;right:8px;width:18px;height:18px;background:#00FF88;border-radius:50%;border:3px solid #121212}
-h1{color:#FFD700;font-size:22px;margin:15px 0 5px}
-.username{color:#888;font-size:13px;margin-bottom:15px}
-.signal-box{background:#0a2614;border:1.5px solid #00FF88;border-radius:12px;padding:12px;color:#00FF88;font-weight:bold;font-size:14px;margin:18px 0;animation:glow 2s infinite}
-@keyframes glow{0%,100%{box-shadow:0 0 5px #00FF88}50%{box-shadow:0 0 15px #00FF88}}
-.btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:16px;margin:10px 0;border-radius:14px;font-weight:bold;text-decoration:none;cursor:pointer;font-size:16px;transition:0.2s}
-.btn-gold{background:linear-gradient(90deg,#FFD700,#FFA500);color:#000;box-shadow:0 4px 15px rgba(255,215,0,0.4)}
-.btn-gold:active{transform:scale(0.97)}
-.btn-dark{background:#222;color:#FFD700;border:1.5px solid #FFD700}
-.stats{display:flex;justify-content:space-around;margin-top:18px;border-top:1px solid #222;padding-top:15px}
-.stat span{display:block;color:#FFD700;font-weight:bold;font-size:16px}
-.stat label{color:#666;font-size:11px}
+body{margin:0;background:#000;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:15px}
+.card{width:100%;max-width:400px;background:#111;border:2px solid #FFD700;border-radius:26px;padding:30px;text-align:center;box-shadow:0 0 30px rgba(255,215,0,0.5)}
+.logo{width:120px;height:120px;border-radius:50%;border:3px solid #FFD700;object-fit:cover;background:#000}
+h2{color:#FFD700;margin:14px 0 3px}
+.user{color:#888;font-size:12px;margin-bottom:14px}
+.box{background:#0a2614;border:1.5px solid #00FF88;color:#00FF88;padding:12px;border-radius:12px;font-weight:bold;font-size:14px;margin:18px 0}
+.btn{display:block;padding:16px;border-radius:13px;font-weight:bold;text-decoration:none;margin:11px 0;cursor:pointer;font-size:16px}
+.gold{background:linear-gradient(90deg,#FFD700,#FFA500);color:#000;box-shadow:0 4px 15px rgba(255,215,0,0.4)}
+.dark{background:#1e1e1e;color:#FFD700;border:1.5px solid #FFD700}
+.stats{display:flex;justify-content:space-around;border-top:1px solid #222;margin-top:16px;padding-top:14px}
+.stats span{color:#FFD700;font-weight:bold} .stats label{color:#666;font-size:10px;display:block}
 </style>
 </head>
 <body>
 <div class="card">
-<div class="profile-wrap">
-<img src="https://cdn-icons-png.flaticon.com/512/1440/1440767.png" class="logo" alt="Rajesh FX">
-<div class="online"></div>
-</div>
-<h1>Rajesh FX Trader 🔥</h1>
-<div class="username">@RajeshFx_33bot | Global FX Trading 72</div>
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" class="logo">
+<h2>Global FX Trade 2027 🔥</h2>
+<div class="user">@RajeshFx_33bot • @GlobalFXTrade_2027</div>
+<div class="box">✅ Daily 5 to 7 Premium Signals 📈<br>💰 Join VIP @GlobalFXTrade_2027</div>
 
-<div class="signal-box">✅ We Provide Daily 5 to 7 Signals Day By Day 📈<br>💰 99% Accuracy | Gold & FX</div>
-
-<a class="btn btn-gold" onclick="launchApp()">🚀 Launch App - @RajeshFx_33bot</a>
-<a class="btn btn-dark" onclick="learnMore()">📊 Learn More - Channel</a>
+<a class="btn gold" onclick="launch()">🚀 Launch App - @RajeshFx_33bot</a>
+<a class="btn dark" onclick="more()">📊 Learn More - Channel</a>
 
 <div class="stats">
-<div class="stat"><span>15K+</span><label>Members</label></div>
-<div class="stat"><span>5-7</span><label>Daily Signals</label></div>
-<div class="stat"><span>99%</span><label>Win Rate</label></div>
+<div><span>15K+</span><label>Members</label></div>
+<div><span>5-7</span><label>Signals</label></div>
+<div><span>99%</span><label>Win</label></div>
 </div>
-
-<p style="color:#333;font-size:10px;margin-top:15px">t.me/RajeshFx_33bot?startapp • t.me/GlobalFXTrading_72</p>
 </div>
-
 <script>
-Telegram.WebApp.ready();
-Telegram.WebApp.expand();
-
-function launchApp(){
-// Ad والا Main Link - Launch App کے لیے
-Telegram.WebApp.openTelegramLink('https://t.me/RajeshFx_33bot?startapp');
+Telegram.WebApp.ready(); Telegram.WebApp.expand();
+function launch(){
+  Telegram.WebApp.openTelegramLink('https://t.me/RajeshFx_33bot?startapp');
 }
-function learnMore(){
-// Learn More پر Channel کھلے گا
-Telegram.WebApp.openTelegramLink('https://t.me/GlobalFXTrading_72');
+function more(){
+  Telegram.WebApp.openTelegramLink('https://t.me/GlobalFXTrade_2027');
 }
 </script>
 </body>
