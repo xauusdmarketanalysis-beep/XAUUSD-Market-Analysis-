@@ -6,40 +6,31 @@
 <title>Global FX Trading 72</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
-body{margin:0;background:#000;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;min-height:100vh}
-.card{width:92%;max-width:410px;background:#141414;border:1px solid #2a2a2a;border-radius:24px;padding:30px;text-align:center}
-.logo{width:120px;height:120px;border-radius:50%;border:3px solid gold;box-shadow:0 0 20px gold}
-h1{color:gold;margin:15px 0 5px}
-p{color:#888;font-size:13px}
-.btn{display:block;padding:16px;margin:12px 0;border-radius:12px;text-decoration:none;font-weight:bold}
-.gold{background:gold;color:#000}
-.white{background:#fff;color:#000}
-.dark{background:#222;color:#fff;border:1px solid #333}
+body{margin:0;background:#050505;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;min-height:100vh;text-align:center}
+.card{width:90%;max-width:400px;background:#121212;border:1px solid gold;border-radius:25px;padding:30px}
+.logo{width:110px;height:110px;border-radius:50%;border:3px solid gold;object-fit:cover}
+h1{color:gold}
+.btn{display:block;padding:17px;margin:14px 0;border-radius:14px;text-decoration:none;font-weight:bold;font-size:17px}
+.launch{background:linear-gradient(90deg,#FFD700,#D4AF37);color:#000}
+.learn{background:#fff;color:#000}
 </style>
 </head>
 <body>
 <div class="card">
-<img src="https://i.ibb.co/Y7x2r8yQ/gfx-gold-logo.jpg" class="logo" alt="GFX Logo">
+<img src="https://cdn-icons-png.flaticon.com/512/1389/1389020.png" class="logo">
 <h1>Global FX Trading 72</h1>
-<p>OFFICIAL CHANNEL & BOT</p>
+<p style="color:#888">Official VIP Portal</p>
 
-<a class="btn gold" onclick="openLink()">🚀 Launch App</a>
-<a class="btn white" onclick="openLink()">📖 Learn More - VIP SIGNALS</a>
-<a class="btn dark" href="https://t.me/GlobalFXTrading_72">📈 Channel: @GlobalFXTrading_72</a>
-<a class="btn dark" href="https://t.me/RajeshFx_33bot">🤖 Bot: @RajeshFx_33bot</a>
+<!-- 2 OPTION JO AAP NE KAHA -->
+<a class="btn launch" href="https://t.me/RajeshFx_33bot">🚀 Launch App - OPEN BOT</a>
+<a class="btn learn" href="https://t.me/GlobalFXTrading_72">📖 Learn More - VIP SIGNALS</a>
+
+<p style="margin-top:20px;color:#555;font-size:11px">
+Bot: @RajeshFx_33bot<br>
+Channel: @GlobalFXTrading_72<br>
+Both Saved in One File
+</p>
 </div>
-
-<script>
-function openLink(){
-  var url="https://t.me/GlobalFXTrading_72";
-  if(window.Telegram && window.Telegram.WebApp){
-    Telegram.WebApp.openTelegramLink(url);
-  }else{
-    window.location.href=url;
-  }
-}
-Telegram.WebApp.ready();
-Telegram.WebApp.expand();
-</script>
+<script>Telegram.WebApp.ready(); Telegram.WebApp.expand();</script>
 </body>
 </html>
