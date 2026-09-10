@@ -3,21 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Global FX Trade 2027 - Pro</title>
+<title>Global FX Trade 2027</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
-body{margin:0;background:#000;color:#fff;font-family:Arial;padding:15px}
-.card{max-width:420px;margin:auto;background:#0f0f0f;border:2px solid #FFD700;border-radius:20px;padding:20px}
-.logo{width:100px;height:100px;border-radius:50%;border:3px solid #FFD700;display:block;margin:0 auto}
-h2{color:#FFD700;text-align:center;margin:10px 0 5px}
-.sub{text-align:center;color:#aaa;font-size:13px;margin-bottom:15px}
-.stats{display:flex;justify-content:space-between;margin:15px 0;gap:8px}
-.stat{background:#1a1a1a;border:1px solid #333;border-radius:10px;padding:10px;text-align:center;flex:1}
-.stat b{color:#00FF88;display:block;font-size:18px}
-.market{background:#151515;border-radius:12px;padding:12px;margin:15px 0;border-left:4px solid #FFD700}
-.market p{margin:5px 0;font-size:13px;color:#ddd}
-.btn{display:block;padding:15px;border-radius:12px;font-weight:bold;text-decoration:none;margin:10px 0;text-align:center;font-size:16px}
-.gold{background:linear-gradient(90deg,gold,#FFD700);color:#000}
+body{margin:0;background:#000;color:#fff;font-family:Arial;padding:10px}
+.card{max-width:420px;margin:auto;background:#0f0f0f;border:2px solid #FFD700;border-radius:20px;padding:20px;text-align:center}
+.logo{width:100px;height:100px;border-radius:50%;border:3px solid #FFD700;display:block;margin:0 auto;background:#111}
+h2{color:#FFD700;margin:15px 0 10px;font-size:26px}
+.profile-text{color:#fff;font-size:15px;line-height:22px;margin:15px 0;padding:12px;background:#151515;border-radius:12px;border-left:4px solid #FFD700;text-align:left}
+.btn{display:block;padding:15px;border-radius:12px;font-weight:bold;text-decoration:none;margin:10px 0;text-align:center;font-size:17px;cursor:pointer}
+.gold{background:gold;color:#000}
 .dark{background:#222;color:gold;border:1.5px solid gold}
 </style>
 </head>
@@ -25,40 +20,21 @@ h2{color:#FFD700;text-align:center;margin:10px 0 5px}
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/3069/3069041.png" class="logo">
 <h2>Global FX Trade 2027 🔥</h2>
-<div class="sub">Professional Forex & Crypto Signals | 95% Accuracy</div>
 
-<div class="stats">
-<div class="stat"><b>5000+</b>Members</div>
-<div class="stat"><b>95%</b>Accuracy</div>
-<div class="stat"><b>24/7</b>Support</div>
+<!-- AAP KE ALFAZ - PROFILE KE ANDAR -->
+<div class="profile-text">
+<b style="color:gold">XAUUSD — Market Analysis</b><br>
+Entry, TP and SL levels may be provided for educational analysis.
 </div>
 
-<div class="market">
-<b style="color:gold">📈 Live Market Analysis Today:</b>
-<p>✅ XAUUSD - BUY @ 2650 - TP 2675 - 150 Pips</p>
-<p>✅ BTCUSD - SELL @ 98500 - TP 97000</p>
-<p>✅ EURUSD - BUY Signal Active - 95% Profitable</p>
-<p style="color:#00FF88">🔥 7 Signals Already Hit TP Today!</p>
+<div onclick="Telegram.WebApp.openTelegramLink('https://t.me/RajeshFx_33bot?startapp')" class="btn gold">🚀 Launch App</div>
+<div onclick="Telegram.WebApp.openTelegramLink('https://t.me/GlobalFXTrade_2027')" class="btn dark">📊 Join VIP Channel</div>
+
+<p style="color:#666;font-size:11px;margin-top:15px">Trusted by 5000+ Traders Worldwide</p>
 </div>
-
-<div style="background:#0a2614;border-radius:10px;padding:10px;text-align:center;color:#00FF88;font-weight:bold;margin-bottom:10px">✅ Daily 5-7 Premium VIP Signals Free</div>
-
-<!-- FINAL FIXED BUTTONS - AB 100% KHULENGE -->
-<a href="https://t.me/GlobalFXTrade_2027" class="btn gold" id="launch">🚀 Launch App</a>
-<a href="https://t.me/GlobalFXTrade_2027" class="btn dark">📊 Join VIP Channel</a>
-
-<p style="text-align:center;color:#666;font-size:11px;margin-top:15px">Trusted by 5000+ Traders Worldwide</p>
-</div>
-
 <script>
 Telegram.WebApp.ready();
 Telegram.WebApp.expand();
-// Force open fix for Brave & Telegram
-document.getElementById('launch').onclick = function(e){
-  e.preventDefault();
-  window.open('https://t.me/GlobalFXTrade_2027','_blank');
-  setTimeout(()=>{ window.location.href='https://t.me/GlobalFXTrade_2027'; },300);
-}
 </script>
 </body>
 </html>
