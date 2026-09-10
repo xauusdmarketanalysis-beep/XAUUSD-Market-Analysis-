@@ -7,34 +7,61 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
 body{margin:0;background:#000;color:#fff;font-family:Arial;padding:10px}
-.card{max-width:420px;margin:auto;background:#0f0f0f;border:2px solid #FFD700;border-radius:20px;padding:20px;text-align:center}
-.logo{width:100px;height:100px;border-radius:50%;border:3px solid #FFD700;display:block;margin:0 auto;background:#111}
-h2{color:#FFD700;margin:15px 0 10px;font-size:26px}
-.profile-text{color:#fff;font-size:15px;line-height:22px;margin:15px 0;padding:12px;background:#151515;border-radius:12px;border-left:4px solid #FFD700;text-align:left}
-.btn{display:block;padding:15px;border-radius:12px;font-weight:bold;text-decoration:none;margin:10px 0;text-align:center;font-size:17px;cursor:pointer}
-.gold{background:gold;color:#000}
-.dark{background:#222;color:gold;border:1.5px solid gold}
+.card{max-width:400px;margin:auto;background:linear-gradient(180deg,#0f0f0f,#080808);border:2px solid #FFD700;border-radius:24px;padding:20px;box-shadow:0 0 25px rgba(255,215,0,0.15)}
+.top-badge{background:linear-gradient(90deg,#FFD700,#ffae00);color:#000;font-weight:bold;font-size:11px;padding:6px 12px;border-radius:20px;display:inline-block;margin-bottom:10px}
+.logo{width:90px;height:90px;border-radius:50%;border:3px solid #FFD700;display:block;margin:0 auto;background:#111;object-fit:contain}
+h2{color:#FFD700;text-align:center;margin:12px 0 6px;font-size:26px}
+.profile-box{background:#151515;border:1px solid #333;border-left:4px solid #FFD700;border-radius:12px;padding:14px;margin:14px 0;text-align:left}
+.profile-box b{color:#fff;font-size:15px;display:block}
+.profile-box span{color:#bbb;font-size:13px;line-height:18px;margin-top:6px;display:block}
+.live{background:#111;border-radius:10px;padding:10px;margin:12px 0;display:flex;justify-content:space-between;font-size:12px;border:1px solid #222}
+.live span{color:#00FF88}
+.chart{height:70px;background:linear-gradient(180deg,rgba(255,215,0,0.1),transparent);border-radius:10px;border:1px solid #222;margin:10px 0;position:relative;overflow:hidden}
+.chart::after{content:"";position:absolute;bottom:15px;left:0;width:100%;height:2px;background:linear-gradient(90deg,#FFD700,#00FF88);box-shadow:0 0 10px #FFD700}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.ben{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:10px;padding:10px;font-size:12px;text-align:center}
+.ben b{display:block;color:#FFD700;font-size:14px}
+.btn{display:block;padding:16px;border-radius:13px;font-weight:bold;text-align:center;margin:10px 0;font-size:17px;cursor:pointer;text-decoration:none;transition:0.2s}
+.gold{background:linear-gradient(90deg,#FFD700,#ffb700);color:#000;box-shadow:0 4px 15px rgba(255,215,0,0.3)}
+.dark{background:#1e1e1e;color:#FFD700;border:1.5px solid #FFD700}
+.pulse{animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+.trust{text-align:center;font-size:11px;color:#666;margin-top:12px}
 </style>
 </head>
 <body>
 <div class="card">
+<div style="text-align:center"><span class="top-badge">🔥 MOST TRUSTED IN PAKISTAN</span></div>
 <img src="https://cdn-icons-png.flaticon.com/512/3069/3069041.png" class="logo">
-<h2>Global FX Trade 2027 🔥</h2>
+<h2>Global FX Trade 2027</h2>
 
-<!-- AAP KE ALFAZ - PROFILE KE ANDAR -->
-<div class="profile-text">
-<b style="color:gold">XAUUSD — Market Analysis</b><br>
-Entry, TP and SL levels may be provided for educational analysis.
+<!-- AAP KE WAHI ALFAZ - PROFILE -->
+<div class="profile-box">
+<b>XAUUSD — Market Analysis</b>
+<span>Entry, TP and SL levels may be provided for educational analysis.</span>
 </div>
 
-<div onclick="Telegram.WebApp.openTelegramLink('https://t.me/RajeshFx_33bot?startapp')" class="btn gold">🚀 Launch App</div>
+<div class="live">
+<div>XAUUSD: <span>2652.45 ▲</span></div>
+<div>BTC: <span>98,450 ▲</span></div>
+<div>EURUSD: <span>1.0845 ▼</span></div>
+</div>
+<div class="chart"></div>
+
+<div class="benefits">
+<div class="ben"><b>📊 Daily</b>3-5 Analysis</div>
+<div class="ben"><b>🎓 Live</b>Chart Breakdown</div>
+<div class="ben"><b>💎 VIP</b>Community</div>
+<div class="ben"><b>📈 Free</b>Education</div>
+</div>
+
+<div style="background:#0a2614;border:1px solid #00FF88;border-radius:10px;padding:10px;text-align:center;color:#00FF88;font-size:13px;font-weight:bold">✅ Join Now - Free Educational Access Today</div>
+
+<div onclick="Telegram.WebApp.openTelegramLink('https://t.me/RajeshFx_33bot?startapp')" class="btn gold pulse">🚀 Launch App</div>
 <div onclick="Telegram.WebApp.openTelegramLink('https://t.me/GlobalFXTrade_2027')" class="btn dark">📊 Join VIP Channel</div>
 
-<p style="color:#666;font-size:11px;margin-top:15px">Trusted by 5000+ Traders Worldwide</p>
+<div class="trust">⭐⭐⭐⭐⭐ 4.9/5 - 5000+ Active Traders<br>Educational Purpose Only - Not Financial Advice</div>
 </div>
-<script>
-Telegram.WebApp.ready();
-Telegram.WebApp.expand();
-</script>
+<script>Telegram.WebApp.ready();Telegram.WebApp.expand();</script>
 </body>
 </html>
