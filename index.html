@@ -1,35 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Global Forex Market - Educational</title>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-<style>
-body { margin:0; font-family:sans-serif; background:#0a0a0a; color:#fff; display:flex; justify-content:center; align-items:center; min-height:100vh; padding:20px; }
-.card { background:#121212; border:1px solid #222; border-radius:20px; padding:24px; width:100%; max-width:380px; text-align:center; }
-h1 { font-size:22px; color:#FFD700; }
-p.sub { color:#aaa; font-size:14px; margin-bottom:20px; }
-.btn { display:block; width:100%; padding:16px; border-radius:12px; font-weight:bold; text-decoration:none; margin-bottom:12px; }
-.btn-gold { background:#FFD700; color:#000; }
-.btn-dark { background:#1e1e1e; color:#fff; border:1px solid #333; }
-.risk { font-size:11px; color:#777; margin-top:18px; }
-</style>
-</head>
-<body>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gold Sender</title>
+<style>body{background:#0f172a;color:#fff;font-family:sans-serif;padding:15px}.card{background:#1e293b;padding:16px;border-radius:15px;max-width:400px;margin:auto}input,select{width:100%;padding:12px;margin:5px 0;border-radius:8px;border:none;background:#334155;color:#fff}button{width:100%;padding:14px;background:#fbbf24;color:#000;font-weight:bold;border:none;border-radius:10px;margin-top:8px}pre{background:#000;padding:10px;border-radius:8px;white-space:pre-wrap}</style>
+</head><body><h2 style="text-align:center;color:#fbbf24">GOLD SENDER</h2>
 <div class="card">
-<div style="font-size:48px;">📊</div>
-<h1>Global Forex Market</h1>
-<p class="sub">Educational Market Insights & Analysis</p>
-
-<a href="https://t.me/GlobalFXTrade_2027" class="btn btn-gold">Join Global Forex Market</a>
-<a href="https://t.me/GlobalFXTrade_2027" class="btn btn-dark">View Market Analysis</a>
-
-<p class="risk">Disclaimer: Educational purpose only. Trading involves risk. No financial advice.</p>
+<input id="e" placeholder="Entry"><input id="sl" placeholder="SL">
+<input id="t1" placeholder="TP1"><input id="t2" placeholder="TP2"><input id="t3" placeholder="TP3">
+<input id="t4" placeholder="TP4"><input id="t5" placeholder="TP5"><input id="t6" placeholder="TP6">
+<button onclick="gen()">Signal Banao</button>
+<pre id="o"></pre>
 </div>
 <script>
-Telegram.WebApp.ready();
-Telegram.WebApp.expand();
-</script>
-</body>
-</html>
+function gen(){
+let m=`GOLD BUY SIGNAL
+Entry: ${e.value}
+SL: ${sl.value}
+TP1:${t1.value} TP2:${t2.value} TP3:${t3.value} TP4:${t4.value} TP5:${t5.value} TP6:${t6.value}`;
+o.innerText=m;
+}
+</script></body></html>
