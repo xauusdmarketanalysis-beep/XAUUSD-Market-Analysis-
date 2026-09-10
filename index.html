@@ -1,20 +1,28 @@
-<!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gold Sender</title>
-<style>body{background:#0f172a;color:#fff;font-family:sans-serif;padding:15px}.card{background:#1e293b;padding:16px;border-radius:15px;max-width:400px;margin:auto}input,select{width:100%;padding:12px;margin:5px 0;border-radius:8px;border:none;background:#334155;color:#fff}button{width:100%;padding:14px;background:#fbbf24;color:#000;font-weight:bold;border:none;border-radius:10px;margin-top:8px}pre{background:#000;padding:10px;border-radius:8px;white-space:pre-wrap}</style>
-</head><body><h2 style="text-align:center;color:#fbbf24">GOLD SENDER</h2>
-<div class="card">
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gold Team Signal</title>
+<style>body{background:#0f172a;color:#fff;font-family:sans-serif;padding:15px}.card{background:#1e293b;padding:16px;border-radius:15px;max-width:400px;margin:auto}h2{text-align:center;color:#fbbf24}input,select{width:100%;padding:12px;margin:5px 0;border-radius:8px;border:none;background:#334155;color:#fff}button{width:100%;padding:14px;background:#fbbf24;color:#000;font-weight:bold;border:none;border-radius:10px;margin-top:8px}pre{background:#000;padding:12px;border-radius:8px;white-space:pre-wrap}</style>
+</head><body><h2>GOLD 6 TP SIGNAL</h2><div class="card">
+<select id="type"><option>BUY</option><option>SELL</option></select>
 <input id="e" placeholder="Entry"><input id="sl" placeholder="SL">
 <input id="t1" placeholder="TP1"><input id="t2" placeholder="TP2"><input id="t3" placeholder="TP3">
 <input id="t4" placeholder="TP4"><input id="t5" placeholder="TP5"><input id="t6" placeholder="TP6">
-<button onclick="gen()">Signal Banao</button>
-<pre id="o"></pre>
-</div>
-<script>
+<button onclick="gen()">Signal Banao</button><pre id="o">Signal yahan ayega...</pre>
+<button onclick="navigator.clipboard.writeText(o.innerText);alert('Copy ho gaya!')">Copy for Team</button>
+</div><script>
 function gen(){
-let m=`GOLD BUY SIGNAL
+let d=new Date().toLocaleDateString('en-GB');
+let m=`*GOLD XAUUSD ${type.value} | ${d} | 7:30 AM KSA*
+
 Entry: ${e.value}
 SL: ${sl.value}
-TP1:${t1.value} TP2:${t2.value} TP3:${t3.value} TP4:${t4.value} TP5:${t5.value} TP6:${t6.value}`;
+
+TP1: ${t1.value}
+TP2: ${t2.value}
+TP3: ${t3.value}
+TP4: ${t4.value}
+TP5: ${t5.value}
+TP6: ${t6.value}
+
+Risk 1-2%`;
 o.innerText=m;
 }
 </script></body></html>
