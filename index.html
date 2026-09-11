@@ -3,32 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Global FX Trade</title>
+<title>Global FX Trade 2027</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
-body{margin:0;background:#f5f5f7;font-family:sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;}
-.card{background:#fff;width:90%;max-width:380px;border-radius:28px;padding:30px 20px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,0.08);}
-.logo{width:85px;height:85px;background:linear-gradient(135deg,#FFD700,#FFA500);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 15px;font-size:42px;}
-h1{font-size:22px;margin:0;font-weight:700;}
-.sub{color:#34a853;font-size:14px;margin-top:6px;font-weight:600;}
-.desc{color:#666;font-size:13px;margin:18px 0 25px;}
-.btn{background:#0088cc;color:#fff;border:none;width:100%;padding:16px;border-radius:14px;font-size:17px;font-weight:700;cursor:pointer;}
-.note{font-size:11px;color:#999;margin-top:15px;}
+body{background:#0f172a;color:white;font-family:Arial;text-align:center;padding:20px}
+.card{background:#1e293b;padding:25px;border-radius:20px;max-width:400px;margin:50px auto;box-shadow:0 10px 30px rgba(0,0,0,0.5)}
+h1{color:#facc15}
+.btn{background:#facc15;color:#000;padding:15px 25px;border:none;border-radius:30px;font-size:18px;font-weight:bold;width:100%;margin-top:20px;cursor:pointer}
+.small{color:#94a3b8;font-size:12px;margin-top:15px}
 </style>
 </head>
 <body>
 <div class="card">
-<div class="logo">👑</div>
-<h1>Global FX Trade 2027</h1>
-<div class="sub">Educational Community</div>
-<div class="desc">Daily XAUUSD Analysis<br>For Educational Purpose Only</div>
-<button class="btn" onclick="openChannel()">🚀 View Free Signals</button>
-<div class="note">Education only, not financial advice</div>
+<h1>👑 Global FX Trade 2027</h1>
+<p>Free XAUUSD Signals</p>
+<p>Educational Purpose Only</p>
+<button class="btn" onclick="joinChannel()">🚀 View Free Signals</button>
+<p class="small">Click to join our Private Channel</p>
 </div>
+
 <script>
-let tg = window.Telegram.WebApp; tg.expand(); tg.ready();
-function openChannel(){
- tg.openTelegramLink('https://t.me/GlobalFXTrade7233');
+const tg = window.Telegram.WebApp;
+tg.expand();
+
+function joinChannel(){
+  const link = "https://t.me/+ZkWQLbxiUvQzNDZk";
+  tg.openTelegramLink(link);
 }
 </script>
 </body>
